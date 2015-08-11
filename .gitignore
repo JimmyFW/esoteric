@@ -2,3 +2,4 @@ eso-env
 data
 settings.py
 *.pyc
+archive

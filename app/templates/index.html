@@ -1,0 +1,25 @@
+{% load render_table from django_tables2 %}
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+<head>
+<title>GRE</title>
+<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css">
+<style>
+#container {
+	margin: 10%;
+	margin-top: 0px;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+<h1 id="title">Vocabulary List</h1>
+<p>Currently under construction</p>
+
+{% render_table vocab %}
+
+</div>
+</body>
+</html>
