@@ -1,10 +1,10 @@
-{% load render_table from django_tables2 %}
+{% load staticfiles %}
 <!DOCTYPE html>
 <meta charset="utf-8">
 <html>
 <head>
 <title>GRE</title>
-<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/style.css">
+<link rel="stylesheet" type="text/css" href="{{ STATIC_ROOT }}css/style.css">
 <style>
 #container {
 	margin: 10%;
@@ -17,9 +17,11 @@
 <div id="container">
 <h1 id="title">Vocabulary List</h1>
 <p>Currently under construction</p>
+<a href="/">Home</a>
+<a href="/search">Search</a>
 
-{% render_table vocab %}
-
+{% block content %}
+{% endblock %}
 </div>
 </body>
 </html>

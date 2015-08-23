@@ -5,7 +5,7 @@ import uuid
 class Vocab(models.Model):
 	word = models.CharField(
 		max_length=50,
-		db_column='word'
+		db_column='word',
 	)
 	definition = models.CharField(
 		max_length=300,
